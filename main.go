@@ -96,7 +96,7 @@ func main() {
 
 	router.Mount("/v1", v1Router)
 	srv := &http.Server{
-		Addr:              ":" + fmt.Sprintf(":%d", port),
+		Addr:              fmt.Sprintf(":%d", port),
 		Handler:           router,
 		ReadHeaderTimeout: 5 * time.Second,
 	}
