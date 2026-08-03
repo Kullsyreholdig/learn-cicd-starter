@@ -19,7 +19,7 @@ jobs:
           go-version: "1.26.0"
 
       - name: buildprod.sh
-        run: ./script/buildprod.sh
+        run: ./scripts/buildprod.sh
       
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
